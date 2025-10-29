@@ -72,7 +72,8 @@ app.post('/api/recipes', (req, res) => {
     created_at: new Date().toISOString()
   };
 
-  
+  recipes.push(newRecipe);
+  res.status(201).json(newRecipe);
 });
 
 // Delete recipe
