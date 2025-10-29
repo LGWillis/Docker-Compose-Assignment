@@ -11,7 +11,7 @@ app.use(express.json());
 let recipes = [
   {
     id: 1,
-    name: '',
+    name: 'Spaghetti Carbonara',
     ingredients: 'Spaghetti\nEggs\nParmesan cheese\nPancetta\nBlack pepper',
     instructions: 'Cook spaghetti. Mix eggs and cheese. Combine with hot pasta and pancetta.',
     cookTime: '20 minutes',
@@ -72,8 +72,7 @@ app.post('/api/recipes', (req, res) => {
     created_at: new Date().toISOString()
   };
 
-  recipes.push(newRecipe);
-  res.status(201).json(newRecipe);
+  
 });
 
 // Delete recipe
