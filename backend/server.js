@@ -11,7 +11,7 @@ app.use(express.json());
 let recipes = [
   {
     id: 1,
-    name: 'Spaghetti Carbonara',
+    name: '',
     ingredients: 'Spaghetti\nEggs\nParmesan cheese\nPancetta\nBlack pepper',
     instructions: 'Cook spaghetti. Mix eggs and cheese. Combine with hot pasta and pancetta.',
     cookTime: '20 minutes',
